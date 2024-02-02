@@ -1,0 +1,84 @@
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.n-left{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex:1;
+    
+}
+
+.n-name{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.n-right{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    
+}
+
+.n-list{
+    flex:10;
+    
+}
+.n-list >ul{
+    
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+.n-list> ul{
+    list-style-type: none;
+    font-size: 0.5rem;
+    align-items: center;
+}
+.n-list> ul>a>li{
+    color: var(--black);
+    font-size: 1rem;
+}
+
+.n-list >ul>li :hover{
+    cursor: pointer;
+    color: var(--orange);
+    transition: 0.3s 0s ease-in;
+}
+
+.n-button{
+    flex:2;
+   
+}
+
+@media screen and (max-width: 480px) {
+    .n-wrapper{
+        margin-top: 0;
+        
+    }
+    .n-left{
+        flex:10;
+    }
+    .n-list{
+        display: none;
+    }
+    .lastname{
+        display: none;
+    }
+    .n-name{
+        font-size: 1rem;
+
+    }
+    .toggle{
+        position: relative;
+        left: 4rem;
+
+    }
+}

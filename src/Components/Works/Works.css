@@ -1,0 +1,365 @@
+.works{
+    padding: 0 3rem;
+    display: flex;
+    height: 120vh;
+    margin-top: 2rem;
+}
+.w-title{
+    margin-bottom: 1.2rem;
+}
+
+.title2{
+    color: var(--orange);
+    font-size: 2.5rem;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+  
+}
+.w-right{
+    position: relative;
+    top:5rem;
+
+}
+
+
+.w-mainCircle{
+    align-self: center;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--boxShadow);
+    background: rgb(255, 255, 255);
+    top:2rem;
+}
+.secondaryCircle{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    position: absolute;
+    box-shadow: var(--boxShadow);
+    border: 5px solid #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+
+}
+.secondaryCircle >img {
+    transform: scale(0.1);
+}
+.w-mainCircle>:nth-child(1){
+    top:-3rem;
+    left:6rem;
+}
+.w-mainCircle>:nth-child(2){
+    top:5rem;
+    left:-3rem;
+}
+.w-mainCircle>:nth-child(3){
+    top:5rem;
+    left:6rem;
+}
+.w-mainCircle>:nth-child(4){
+    top:5rem;
+    left:15rem;
+}
+.w-mainCircle>:nth-child(5){
+    top:13rem;
+    left:6rem;
+}
+
+.w-backCircle{
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.blue{
+    background: #1949B8;
+    left:10rem;
+    top: 0rem;
+}
+.yellow{
+    background: #f5C32C;
+    left:10rem;
+    top: 8rem;
+}
+.desc{
+    font-size: 0.75rem;
+    font-weight: normal ;
+    color: var(--gray);
+}
+.soft-skills{
+  gap:0.5rem;
+ margin-top: 1.5rem;
+
+}
+.s-skills{
+    margin-top: 1rem;
+  gap:1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 60%;
+  align-items: center;
+
+}
+.skillname>span{
+    font-size: 0.7rem;
+}
+.skillname{
+    display: flex;
+    align-items: center;
+}
+.tools-tech .tools{
+    display: flex;
+    gap:0.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+
+
+}
+.tools-tech {
+    margin-top: 0.5rem; 
+}
+.tool{
+    width: fit-content;
+    min-width: 5rem;
+    height: 1rem;
+    padding: 0.3rem 0.5rem;
+    background: white;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--black);
+    box-shadow: var(--boxShadow2);
+}
+.title{
+    display: flex;
+    align-items: center;
+    
+}
+.w-title{
+    font-size: 2.2rem;
+}
+.title2{
+    font-size: 2.2rem;
+    
+}
+.skills{
+    margin-top: 1rem;
+}
+
+
+.skillname>img{
+    width: 1rem;
+}
+.skill-desc{
+    gap: 0;
+    font-size: 0.75rem;
+}
+.p-skill:nth-of-type(1){
+    margin-top:1.2rem;
+}
+.p-skill{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.progressbar{
+    margin-left: 0.4rem;
+    position: relative;
+    top:-1rem;
+    width: 50%;
+    height: 0.2rem;
+    border-radius: 3px 3px;
+    background: var(--black);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progressbar span{
+    height: 100%;
+    background: var(--orange);
+    position: absolute;
+    border-radius: 3px;
+    animation: animate 1s  cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+.progressbar.javascript span{
+    width: 90%;
+}
+.progressbar.java span{
+    width: 75%;
+}
+.progressbar.php span{
+    width: 90%;
+}
+.progressbar.csharp span{
+    width: 80%;
+}
+.progressbar.react span{
+    width: 85%;
+}
+.progressbar.python span{
+    width: 70%;
+}
+.progressbar span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: var(--black);
+    color: white;
+    font-size: 0.55rem;
+    border-radius: 3px;
+    top:-25px;
+    right:-20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progressbar.javascript span::after{
+    content: "90%";
+}
+.progressbar.java span::after{
+    content: "75%";
+}
+.progressbar.php span::after{
+    content: "90%";
+}
+.progressbar.csharp span::after{
+    content: "80%";
+}
+.progressbar.react span::after{
+    content: "85%";
+}
+.progressbar.python span::after{
+    content: "70%";
+}
+.progressbar span::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: rgb(0, 0, 0);
+    top:-10px;
+    right:0;
+    animation : showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+    
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .works{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 0;
+        margin-top: 2rem;
+        
+    }
+    .w-right{
+        transform: scale(0.6);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        top:-2rem;
+        
+        
+    }
+    .blue{
+    background: #1949B8;
+    left:2rem;
+    top: 1rem;
+    }
+    .yellow{
+        background: #f5C32C;
+        left:4rem;
+        top: 8rem;
+    }
+     .w-title{
+    
+        margin-bottom: 0.5rem;
+    }
+   .title2{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .programing-skills:nth-child(1){
+        margin-top: 1rem;
+    }
+    .skill span:nth-child(1) {
+        
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .skillname img{
+        transform: scale(0.8);
+    }
+    .skillname span{
+        font-size: 0.7rem;
+    }
+    .progressbar{
+        width: 90%;
+    }
+    .tools-tech span:nth-child(1){
+          font-size: 1rem;
+         
+    }
+    .tools-tech{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+    }
+    .tools{
+        width: 100%;
+    }
+    .tool{
+        min-width: 2.7rem;
+        padding: 0.1rem 0.2rem;
+    }
+    .tool .title span{
+        font-size: 0.5rem;
+    }
+    .s-skills {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        gap:0.2rem;
+        margin-top: 0%;
+        justify-content: space-around;
+   
+    }
+    .s-skills .skill>span{
+        font-size: 0.55rem;
+    }
+ 
+}

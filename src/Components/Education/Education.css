@@ -1,0 +1,129 @@
+.education{
+    padding: 0 3rem;
+    display: flex;
+    height:65vh;
+    margin-bottom: 13rem;
+}
+.Education-Title{
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--black);
+}
+.Education-Title2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--orange);
+}
+.educ-Academic{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.educ-Academic .box{
+    display: flex;
+    flex-direction: column;
+    
+}
+.educ-Academic .box img{
+    width:2rem;
+    z-index: 1;
+}
+.edu-content{
+    
+    margin-left: 0.95rem;
+    padding: 1rem 1rem;
+    border-left: 0.20rem solid var(--orange);
+    display: flex;
+    flex-direction: column;
+    gap:0.3rem;
+    position: relative;
+    top:-0.5rem;
+    z-index: 0;
+}
+.degreetitle{
+    font-size: 1rem;
+}
+.university{
+    font-size: 0.8rem;
+}
+.year{
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: normal;
+}
+.breakline{ 
+    border-top: 0.05rem solid rgb(231, 147, 3);
+}
+
+.educ-Expirience{
+    display: flex;
+    flex: 1;
+    padding-left: 5rem;
+    flex-direction: column;
+}
+.educ-Expirience .box img{
+    width:1.5rem;
+    z-index: 1;
+}
+.work-content{
+    margin-left: 0.7rem;
+    padding: 1rem 1rem;
+    border-left: 0.20rem solid var(--orange);
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    position: relative;
+    top:-0.5rem;
+    z-index: 0;
+}
+@media screen and (max-width: 480px) {
+    .education{
+        margin-top: 2rem;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+       
+        
+        
+    }
+    .educ-Academic {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .Education-Title {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+  
+
+    }
+    
+    .Education-Title2{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        font-weight: bold;
+        
+    }
+    .box{
+        margin-top: 1rem;
+    }
+    .educ-Expirience{
+        padding: 0;
+        margin-top: 1rem;
+        
+    }
+    .Education-Title {
+        margin-bottom: 0rem;
+    }
+    .degreetitle{
+        font-size: 0.75rem;
+    }
+    .university{
+        font-size: 0.55rem;
+    }
+    .year{
+        font-size: 0.45rem;
+    }
+}

@@ -1,0 +1,42 @@
+.card{
+    width:10rem;
+    height:13rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+    text-align: center;
+    background: white;
+    border: 7px solid var(--orangeCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding: 0px 26px;
+   
+}
+
+/* .card span:nth-of-type(2){
+    font-size: 0.75rem;
+    color: var(--gray);
+} */
+
+.card> img{
+    transform: scale(0.6);
+    position: relative;
+    top: -4.65rem;
+    z-index: 0;
+}
+
+.card >a>button{    
+    position: relative;
+    top: -9rem;
+    font-size: 0.75rem;
+
+}
+.l-icon{
+    width: 0px;
+    
+}
+@media screen and (max-width: 480px) {
+    
+}

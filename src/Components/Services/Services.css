@@ -1,0 +1,126 @@
+.services{
+    padding: 0 3rem;
+    display: flex;
+    height:65vh;
+    
+    margin-bottom: 13rem;
+    
+
+}
+
+.s-awsome{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    margin-top: 2rem;
+
+}
+.cards{
+    flex:1;
+    margin-top: 2rem;
+}
+
+
+.s-awsome>:nth-child(2){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2.5rem;
+    
+}
+.s-awsome>:nth-child(4){
+    color: var(--gray);
+    font-size: 0.75rem;
+}
+.serviceTxt{
+    color: var(--orange);
+    font-weight: bold;
+    font-size:2.5rem;
+    
+}
+.servicdesc{
+    text-align: justify;
+    line-height: 1.1rem;
+    font-size: 0.8rem !important;
+}
+
+.s-button{  
+   width:8rem; 
+   font-size: 0.75rem;
+}
+.cards{
+    position: relative;
+}
+/* .card-style1{
+    position: relative;
+    right:-5rem;
+    top: -5rem;
+}
+.card-style2{
+    position: relative;
+    left:-5rem;
+    top:10rem;
+} */
+.card-style3{
+    display: flex;
+    
+    justify-content: center;
+   
+   
+}
+
+@media screen and (max-width: 480px) {
+    .services{
+        margin-top: 2rem;
+        flex-direction: column;
+        gap:5rem;
+        height: 50rem;
+        padding: 0;
+        margin-bottom: 0;
+        height: fit-content;
+    
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap:17rem;
+        transform: scale(0.8);
+        
+    }
+    .blur{
+        display: none;
+    }
+    .cards>*{
+        position: static;
+        
+    }
+    .servicdesc{
+        text-align: left;
+    }
+    .cards{
+        margin-top: -3rem;
+    }
+    .s-awsome{
+        font-size: 0.4rem;
+    }
+    .s-awsome span:nth-child(1){
+        font-size: 1.8rem;
+    }
+    .s-awsome span:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .servicdesc{
+        font-size: 0.65rem!important;
+        font-weight: normal!important;
+        line-height: 1rem;
+  
+    }
+    .cards{
+        display: none;
+    }
+    .s-button{
+        width: fit-content;
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+}
