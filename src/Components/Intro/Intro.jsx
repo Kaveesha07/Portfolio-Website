@@ -28,9 +28,9 @@ function Intro() {
                 <span>Kaveesha Pathirana</span>
                 <span style={{color:darkMode?'var(--lowWhite)':''}}>Undergraduate student | Skills in | ReactJS | PHP | C# | JAVA |</span>
             </div>
-            <button className="button i-button">
+            <a href="tel:+94705044501"><button className="button i-button">
                 Hire Me
-            </button>
+            </button></a>
             <div className="i-icons">
                 <a href="https://github.com/Kaveesha07">
                 <img src={Github} alt="Github.png" /></a>
