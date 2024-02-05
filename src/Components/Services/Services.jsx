@@ -3,7 +3,7 @@ import './Services.css'
 import Boy4 from '../../assets/img/boy4.png'
 import Card from '../../Components/Card/Card'
 import LinkedIn from '../../assets/img/linkedin.png'
-import Resume from '../../assets/KaveeshaPathirana.pdf'
+import Resume from '../../assets/KaveeshaPathiranaCV.pdf'
 import { themeContext } from '../../Context.jsx';
 import { useContext } from 'react';
 
